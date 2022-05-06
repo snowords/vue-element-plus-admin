@@ -29,7 +29,6 @@ If you need a basic template, please switch to the `tempalte` branch. `Tempalte`
 ## Preview
 
 - [vue-element-plus-admin](https://element-plus-admin.cn/) - Full version of the github site
-- [vue-element-plus-admin](https://kailong110120130.gitee.io/vue-element-plus-admin) - Full version of the gitee site
 
 account: **admin/admin test/test**
 
@@ -40,8 +39,6 @@ account: **admin/admin test/test**
 ## Documentation
 
 [Document Github](https://element-plus-admin-doc.cn/)
-
-[Document Gitee](https://kailong110120130.gitee.io/vue-element-plus-admin-doc)
 
 ## Preparation
 
