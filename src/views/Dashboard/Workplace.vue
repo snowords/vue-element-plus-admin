@@ -170,7 +170,7 @@ const { t } = useI18n()
     </ElCard>
   </div>
 
-  <ElRow class="mt-20px" :gutter="20" justify="space-between">
+  <ElRow class="mt-10px" :gutter="10" justify="space-between">
     <ElCol :xl="16" :lg="16" :md="24" :sm="24" :xs="24" class="mb-20px">
       <ElCard shadow="never">
         <template #header>
@@ -206,7 +206,7 @@ const { t } = useI18n()
         </ElSkeleton>
       </ElCard>
 
-      <ElCard shadow="never" class="mt-20px">
+      <ElCard shadow="never" class="mt-10px">
         <template #header>
           <div class="flex justify-between">
             <span>{{ t('workplace.dynamic') }}</span>
@@ -260,7 +260,7 @@ const { t } = useI18n()
         </ElSkeleton>
       </ElCard>
 
-      <ElCard shadow="never" class="mt-20px">
+      <ElCard shadow="never" class="mt-10px">
         <template #header>
           <span>xx{{ t('workplace.index') }}</span>
         </template>
@@ -269,7 +269,7 @@ const { t } = useI18n()
         </ElSkeleton>
       </ElCard>
 
-      <ElCard shadow="never" class="mt-20px">
+      <ElCard shadow="never" class="mt-10px">
         <template #header>
           <span>{{ t('workplace.team') }}</span>
         </template>

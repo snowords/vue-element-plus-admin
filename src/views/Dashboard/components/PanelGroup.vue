@@ -35,9 +35,9 @@ getCount()
 </script>
 
 <template>
-  <ElRow :gutter="20" justify="space-between" :class="prefixCls">
+  <ElRow :gutter="10" justify="space-between" :class="prefixCls">
     <ElCol :xl="6" :lg="6" :md="12" :sm="12" :xs="24">
-      <ElCard shadow="hover" class="mb-20px">
+      <ElCard shadow="hover" class="mb-10px">
         <ElSkeleton :loading="loading" animated :rows="2">
           <template #default>
             <div :class="`${prefixCls}__item flex justify-between`">
