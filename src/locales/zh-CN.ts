@@ -127,7 +127,6 @@ export default {
     example: '综合示例',
     exampleDialog: '综合示例 - 弹窗',
     examplePage: '综合示例 - 页面',
-    exampleHello: 'CURD表格',
     exampleAdd: '综合示例 - 新增',
     exampleEdit: '综合示例 - 编辑',
     exampleDetail: '综合示例 - 详情',
