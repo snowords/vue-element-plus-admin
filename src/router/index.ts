@@ -427,6 +427,14 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
         }
       },
       {
+        path: 'example-hello',
+        component: () => import('@/views/Example/Muzz/Hello.vue'),
+        name: 'ExampleHello',
+        meta: {
+          title: t('router.exampleHello')
+        }
+      },
+      {
         path: 'example-add',
         component: () => import('@/views/Example/Page/ExampleAdd.vue'),
         name: 'ExampleAdd',

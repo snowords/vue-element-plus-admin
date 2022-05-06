@@ -349,9 +349,9 @@ watch(
                 <Icon
                   v-if="
                     item?.matched &&
-                    item?.matched[1] &&
-                    item?.matched[1]?.meta?.icon &&
-                    tagsViewIcon
+                      item?.matched[1] &&
+                      item?.matched[1]?.meta?.icon &&
+                      tagsViewIcon
                   "
                   :icon="item?.matched[1]?.meta?.icon"
                   :size="12"

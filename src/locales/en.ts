@@ -127,6 +127,7 @@ export default {
     example: 'Example',
     exampleDialog: 'Example dialog',
     examplePage: 'Example page',
+    exampleHello: 'CURD Table',
     exampleAdd: 'Example page - add',
     exampleEdit: 'Example page - edit',
     exampleDetail: 'Example page - detail',

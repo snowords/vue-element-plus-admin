@@ -376,6 +376,14 @@ const adminList = [
         }
       },
       {
+        path: 'example-hello',
+        component: 'views/Example/Muzz/Hello',
+        name: 'ExampleHello',
+        meta: {
+          title: 'router.exampleHello'
+        }
+      },
+      {
         path: 'example-add',
         component: 'views/Example/Page/ExampleAdd',
         name: 'ExampleAdd',

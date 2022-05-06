@@ -92,17 +92,36 @@ const setVisible = () => {
 </script>
 
 <template>
-  <Form
-    :is-custom="false"
-    :label-width="labelWidth"
-    hide-required-asterisk
-    inline
-    :is-col="isCol"
-    :schema="newSchema"
-    @register="register"
-  >
-    <template #action>
-      <div v-if="layout === 'inline'">
+  <div class="inline-block">
+    <Form
+      :is-custom="false"
+      :label-width="labelWidth"
+      hide-required-asterisk
+      inline
+      :is-col="isCol"
+      :schema="newSchema"
+      @register="register"
+    >
+      <template #action>
+        <div v-if="layout === 'inline'">
+          <ElButton v-if="showSearch" type="primary" @click="search">
+            <Icon icon="ep:search" class="mr-5px" />
+            {{ t('common.query') }}
+          </ElButton>
+          <ElButton v-if="showReset" @click="reset">
+            <Icon icon="ep:refresh-right" class="mr-5px" />
+            {{ t('common.reset') }}
+          </ElButton>
+          <ElButton v-if="expand" type="text" @click="setVisible">
+            {{ t(visible ? 'common.shrink' : 'common.expand') }}
+            <Icon :icon="visible ? 'ant-design:up-outlined' : 'ant-design:down-outlined'" />
+          </ElButton>
+        </div>
+      </template>
+    </Form>
+  
+    <template v-if="layout === 'bottom'">
+      <div :style="bottonButtonStyle">
         <ElButton v-if="showSearch" type="primary" @click="search">
           <Icon icon="ep:search" class="mr-5px" />
           {{ t('common.query') }}
@@ -117,22 +136,5 @@ const setVisible = () => {
         </ElButton>
       </div>
     </template>
-  </Form>
-
-  <template v-if="layout === 'bottom'">
-    <div :style="bottonButtonStyle">
-      <ElButton v-if="showSearch" type="primary" @click="search">
-        <Icon icon="ep:search" class="mr-5px" />
-        {{ t('common.query') }}
-      </ElButton>
-      <ElButton v-if="showReset" @click="reset">
-        <Icon icon="ep:refresh-right" class="mr-5px" />
-        {{ t('common.reset') }}
-      </ElButton>
-      <ElButton v-if="expand" type="text" @click="setVisible">
-        {{ t(visible ? 'common.shrink' : 'common.expand') }}
-        <Icon :icon="visible ? 'ant-design:up-outlined' : 'ant-design:down-outlined'" />
-      </ElButton>
-    </div>
-  </template>
+  </div>
 </template>

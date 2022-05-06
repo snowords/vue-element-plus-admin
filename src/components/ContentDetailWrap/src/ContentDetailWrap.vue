@@ -49,7 +49,7 @@ onMounted(() => {
       </div>
     </Sticky>
     <div style="padding: var(--app-content-padding)">
-      <ElCard :class="[`${prefixCls}-body`, 'mb-20px']" shadow="never">
+      <ElCard :class="[`${prefixCls}-body`, 'mb-10px']" shadow="never">
         <div>
           <slot></slot>
         </div>
