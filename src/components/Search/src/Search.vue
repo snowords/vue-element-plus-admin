@@ -29,7 +29,7 @@ const props = defineProps({
   showSearch: propTypes.bool.def(true),
   showReset: propTypes.bool.def(true),
   // 是否显示伸缩
-  expand: propTypes.bool.def(false),
+  expand: propTypes.bool.def(true),
   // 伸缩的界限字段
   expandField: propTypes.string.def('')
 })
@@ -112,7 +112,7 @@ const setVisible = () => {
             <Icon icon="ep:refresh-right" class="mr-5px" />
             {{ t('common.reset') }}
           </ElButton>
-          <ElButton v-if="expand" type="text" @click="setVisible">
+          <ElButton v-if="expand" @click="setVisible">
             {{ t(visible ? 'common.shrink' : 'common.expand') }}
             <Icon :icon="visible ? 'ant-design:up-outlined' : 'ant-design:down-outlined'" />
           </ElButton>
@@ -130,7 +130,7 @@ const setVisible = () => {
           <Icon icon="ep:refresh-right" class="mr-5px" />
           {{ t('common.reset') }}
         </ElButton>
-        <ElButton v-if="expand" type="text" @click="setVisible">
+        <ElButton v-if="expand" @click="setVisible">
           {{ t(visible ? 'common.shrink' : 'common.expand') }}
           <Icon :icon="visible ? 'ant-design:up-outlined' : 'ant-design:down-outlined'" />
         </ElButton>
