@@ -2,7 +2,6 @@
 import Write from './components/Write.vue'
 import { ContentDetailWrap } from '@/components/ContentDetailWrap'
 import { ref, unref } from 'vue'
-import { ElButton } from 'element-plus'
 import { useI18n } from '@/hooks/web/useI18n'
 import { useRouter, useRoute } from 'vue-router'
 import { saveTableApi, getTableDetApi } from '@/api/table'

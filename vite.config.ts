@@ -6,12 +6,15 @@ import WindiCSS from 'vite-plugin-windicss'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 import EslintPlugin from 'vite-plugin-eslint'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import styleImport, { ElementPlusResolve } from 'vite-plugin-style-import'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import { viteMockServe } from 'vite-plugin-mock'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
+
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 const root = process.cwd()
@@ -35,15 +38,14 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       Vue(),
       VueJsx(),
       WindiCSS(),
-      styleImport({
-        resolves: [ElementPlusResolve()],
-        libs: [{
-          libraryName: 'element-plus',
-          esModule: true,
-          resolveStyle: (name) => {
-            return `element-plus/es/components/${name.substring(3)}/style/css`
-          }
-        }]
+      AutoImport({
+        imports: ['vue'],
+        dts: 'types/auto-imports.d.ts',
+        resolvers: [ElementPlusResolver()],
+      }),
+      Components({
+        dts: 'types/components.d.ts',
+        resolvers: [ElementPlusResolver()],
       }),
       EslintPlugin({
         cache: false,

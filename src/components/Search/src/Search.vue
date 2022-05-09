@@ -2,7 +2,6 @@
 import { Form } from '@/components/Form'
 import { PropType, computed, unref, CSSProperties, ref } from 'vue'
 import { propTypes } from '@/utils/propTypes'
-import { ElButton } from 'element-plus'
 import { useI18n } from '@/hooks/web/useI18n'
 import { useForm } from '@/hooks/web/useForm'
 import { findIndex } from '@/utils'
@@ -29,7 +28,7 @@ const props = defineProps({
   showSearch: propTypes.bool.def(true),
   showReset: propTypes.bool.def(true),
   // 是否显示伸缩
-  expand: propTypes.bool.def(true),
+  expand: propTypes.bool.def(false),
   // 伸缩的界限字段
   expandField: propTypes.string.def('')
 })

@@ -3,7 +3,6 @@ import { Descriptions } from '@/components/Descriptions'
 import { useI18n } from '@/hooks/web/useI18n'
 import { reactive, unref } from 'vue'
 import { Form } from '@/components/Form'
-import { ElFormItem, ElInput, ElButton } from 'element-plus'
 import { required } from '@/utils/formRules'
 import { useForm } from '@/hooks/web/useForm'
 

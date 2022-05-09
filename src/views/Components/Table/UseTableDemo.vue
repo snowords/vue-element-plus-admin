@@ -5,7 +5,6 @@ import { Table } from '@/components/Table'
 import { getTableListApi } from '@/api/table'
 import { TableData } from '@/api/table/types'
 import { ref, h, reactive, unref } from 'vue'
-import { ElTag, ElButton } from 'element-plus'
 import { useTable } from '@/hooks/web/useTable'
 
 const { register, tableObject, methods } = useTable<

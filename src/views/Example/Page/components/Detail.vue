@@ -3,7 +3,6 @@ import { PropType, reactive } from 'vue'
 import type { TableData } from '@/api/table/types'
 import { Descriptions } from '@/components/Descriptions'
 import { useI18n } from '@/hooks/web/useI18n'
-import { ElTag } from 'element-plus'
 
 const { t } = useI18n()
 
@@ -52,8 +51,8 @@ const schema = reactive<DescriptionsSchema[]>([
           row.importance === 1
             ? t('tableDemo.important')
             : row.importance === 2
-            ? t('tableDemo.good')
-            : t('tableDemo.commonly')
+              ? t('tableDemo.good')
+              : t('tableDemo.commonly')
         }}
       </ElTag>
     </template>
