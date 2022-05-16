@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/kailong321200875/vue-element-plus-admin/compare/v1.4.1...v1.4.2) (2022-05-15)
+
+
+### Styling
+
+* fix dark mode bug ([2f9fd5d](https://github.com/kailong321200875/vue-element-plus-admin/commit/2f9fd5d21550d771ec12ae3540b975e2eebcd25b))
+
+### [1.4.1](https://github.com/kailong321200875/vue-element-plus-admin/compare/v1.4.0...v1.4.1) (2022-05-12)
+
+
+### Bug Fixes
+
+* the warning of VSCode extensions ([a368c21](https://github.com/kailong321200875/vue-element-plus-admin/commit/a368c21fb9c41f98f31f51586a2023076a8a9132))
+
+## [1.4.0](https://github.com/kailong321200875/vue-element-plus-admin/compare/v1.3.2...v1.4.0) (2022-05-10)
+
+
+### Features
+
+* add dark mode ([0758a6a](https://github.com/kailong321200875/vue-element-plus-admin/commit/0758a6a9d83170e53d45d39c3313e52ff5885746))
+
 ### [1.3.2](https://github.com/kailong321200875/vue-element-plus-admin/compare/v1.3.1...v1.3.2) (2022-05-07)
 
 
